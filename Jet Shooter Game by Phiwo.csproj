@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8295C703-067C-4CF4-B3A1-30931CB1A4C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Jet_Shooter_Game_by_Phiwo</RootNamespace>
+    <AssemblyName>Jet Shooter Game by Phiwo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>warrior-icon-19478.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CfrmJetShooter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CfrmJetShooter.Designer.cs">
+      <DependentUpon>CfrmJetShooter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CfrmJetShooter.resx">
+      <DependentUpon>CfrmJetShooter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3f65dd48c9400aeddb6f2dd5fd60ed59.pcm" />
+    <None Include="Resources\bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound Effect.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebastián-Yatra-Cómo-Mirarte-Lyrics-English-and-Spanish-Translation-Meaning.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Song.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound effectds.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixkit-trumpets-and-strings-off-beat-2286.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play21.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Japan Life.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Japan Life.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warrior-icon-19478.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="warrior-icon-19478.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
